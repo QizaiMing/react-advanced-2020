@@ -9,7 +9,8 @@ const UseEffectBasics = () => {
     if (value) {
       document.title = `New Messages(${value})`
     }
-  })
+  }, [value])
+
   console.log('render component')
   return (
     <React.Fragment>
